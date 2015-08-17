@@ -3,7 +3,7 @@ ngDatalist
 AngularJS directive providing text input with searchable dropdown list.
 
 ## Live demo
-(http://przemyslawhardyn.com/ng-datalist/example/)
+[link](http://przemyslawhardyn.com/ng-datalist/example/)
 
 ## Features
 - One file directive, easy to integrate with module bundlers sucha as webpack, gulp etc.
