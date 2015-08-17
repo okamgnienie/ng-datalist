@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ngDatalist example</title>
+
+    <!-- SCRIPTS -->
+    <script src="./angular.min.js"></script>
+    <script src="./../dist/ng-datalist.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="application" ng-app="myApp" ng-controller="myController">
+      <label for="checkbox-required">Make input required</label>
+      <input type="checkbox" ng-model="fieldRequired" id="checkbox-required">
+
+      <div class="current-element">
+        Current value: "{{ myElement }}"
+      </div>
+
+      <header>Sample form</header>
+
+      <form ng-submit="submitMyForm($event)">
+        <ng-datalist items=myAwesomeList
+                     current=myElement
+                     req=fieldRequired></ng-datalist>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- APPLICATION -->
+    <script src="./app.js"></script>
+  </body>
+</html>
