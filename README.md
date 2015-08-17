@@ -18,13 +18,13 @@ Configurable and easy to be styled.
 ## Styling
 Set styling option to false:
 
-```
+```html
 <ng-datalist items=myItems current=currentItem styling="false"><ng-datalist>
 ```
 
 Now you can start to style elements by yourself using ng-datalist-container class.
 
-```
+```css
 .ng-datalist-container {
     border: 1px solid #020D45;
     height: 50px;
