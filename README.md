@@ -6,7 +6,7 @@ AngularJS directive providing text input with searchable dropdown list.
 [link](http://przemyslawhardyn.com/ng-datalist/example/)
 
 ## Features
-- One file directive, easy to integrate with module bundlers sucha as webpack, gulp etc.
+- One-file directive, easy to integrate with module bundlers such as webpack, gulp etc.
 - Searchable dropdown list.
 - Option to switch on/off 'require' in the forms.
 - Easy to apply custom styles.
@@ -78,6 +78,6 @@ Now you can start to style elements by yourself using ng-datalist-container clas
 }
 ```
 
-## Licence
+## License
 The MIT License (MIT)
 
