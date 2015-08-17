@@ -12,21 +12,20 @@ AngularJS directive providing text input with searchable dropdown list.
 - Easy to apply custom styles.
 
 ## Getting started
-1. Attach directive to your application just after angular:
+1. Attach directive to your application just after AngularJS framework:
     ```html
     <script src="./angular.min.js"></script>
-    <script src="./../dist/ng-datalist.js"></script>
+    <script src="./ng-datalist/dist/ng-datalist.js"></script>
     ```
 
 2. Add 'ng-datalist' module to your application dependencies:
     ```javascript
-    angular.module('myApp', ['ng-datalist'])
-      .controller('myController', myController);
+    angular.module('myApp', ['ng-datalist']);
     ```
 
 3. Insert directive to the application:
     ```html
-    <ng-datalist items=myAwesomeList current=myElement req="true"></ng-datalist>
+    <ng-datalist items=myAwesomeList current=myElement></ng-datalist>
     ```
 
 ## Directive Options
@@ -41,7 +40,7 @@ Switch styling option to false, so that your new styles will work well:
 <ng-datalist items=myItems current=currentItem styling="false"><ng-datalist>
 ```
 
-Now you can start to style elements by yourself using ng-datalist-container class or by accesing directly by class name:
+Now you can start to style elements by yourself using ng-datalist-container class or by accessing directly by class name:
 ```css
 /* Directive container */
 .ng-datalist-container {
