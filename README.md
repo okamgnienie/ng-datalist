@@ -40,7 +40,7 @@ Switch styling option to false, so that your new styles will work well:
 <ng-datalist items=myItems current=currentItem styling="false"><ng-datalist>
 ```
 
-Now you can start to style elements by yourself using ng-datalist-container class or by accessing directly by class name:
+Now you can start to style elements using ng-datalist-container class or accessing directly by directive element class name:
 ```css
 /* Directive container */
 .ng-datalist-container {
