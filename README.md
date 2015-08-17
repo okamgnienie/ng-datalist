@@ -9,8 +9,6 @@ Configurable and easy to be styled.
 - Easy switch on/off require in the forms.
 - Easy to apply custom styles.
 
-## Example
-
 ## Options
 - items (required)
 - currentItem (required)
@@ -20,13 +18,13 @@ Configurable and easy to be styled.
 ## Styling
 Set styling option to false:
 
-'''
+```
 <ng-datalist items=myItems current=currentItem styling="false"><ng-datalist>
-'''
+```
 
 Now you can start to style elements by yourself using ng-datalist-container class.
 
-'''
+```
 .ng-datalist-container {
     border: 1px solid #020D45;
     height: 50px;
@@ -44,7 +42,8 @@ Now you can start to style elements by yourself using ng-datalist-container clas
 .ng-datalist-container li {
     color: #020D45;
 }
-'''
+```
 
 ## Licence
 The MIT License (MIT)
+
