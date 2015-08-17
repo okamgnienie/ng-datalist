@@ -11,23 +11,23 @@ AngularJS directive providing text input with searchable dropdown list.
 - Option to switch on/off 'require' in the forms.
 - Easy to apply custom styles.
 
-## Geting started
+## Getting started
 1. Attach directive to your application just after angular:
-```html
-<script src="./angular.min.js"></script>
-<script src="./../dist/ng-datalist.js"></script>
-```
+    ```html
+    <script src="./angular.min.js"></script>
+    <script src="./../dist/ng-datalist.js"></script>
+    ```
 
 2. Add 'ng-datalist' module to your application dependencies:
-```javascript
-angular.module('myApp', ['ng-datalist'])
-  .controller('myController', myController);
-```
+    ```javascript
+    angular.module('myApp', ['ng-datalist'])
+      .controller('myController', myController);
+    ```
 
 3. Insert directive to the application:
-```html
-<ng-datalist items=myAwesomeList current=myElement req="true"></ng-datalist>
-```
+    ```html
+    <ng-datalist items=myAwesomeList current=myElement req="true"></ng-datalist>
+    ```
 
 ## Directive Options
 - items   {Array}   (required) - array containing items to be displayed on the list.
