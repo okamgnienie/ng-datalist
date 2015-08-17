@@ -11,21 +11,37 @@ AngularJS directive providing text input with searchable dropdown list.
 - Option to switch on/off 'require' in the forms.
 - Easy to apply custom styles.
 
-## Options
-- items (required) - array containing items.
-- currentItem (required) - use to get current input value.
-- req (optional) - set to true if input should be required in the form.
-- styling (optional) - set to false to disable default styles.
+## Geting started
+1. Attach directive to your application just after angular:
+```html
+<script src="./angular.min.js"></script>
+<script src="./../dist/ng-datalist.js"></script>
+```
+
+2. Add 'ng-datalist' module to your application dependencies:
+```javascript
+angular.module('myApp', ['ng-datalist'])
+  .controller('myController', myController);
+```
+
+3. Insert directive to the application:
+```html
+<ng-datalist items=myAwesomeList current=myElement req="true"></ng-datalist>
+```
+
+## Directive Options
+- items   {Array}   (required) - array containing items to be displayed on the list.
+- current {string}  (required) - use to get/set current input value.
+- req     {boolean} (optional) - set to true if input should be required by the form.
+- styling {boolean} (optional) - set to false to disable default styles.
 
 ## Styling
 Switch styling option to false, so that your new styles will work well:
-
 ```html
 <ng-datalist items=myItems current=currentItem styling="false"><ng-datalist>
 ```
 
-Now you can start to style elements by yourself using ng-datalist-container class.
-
+Now you can start to style elements by yourself using ng-datalist-container class or by accesing directly by class name:
 ```css
 /* Directive container */
 .ng-datalist-container {
